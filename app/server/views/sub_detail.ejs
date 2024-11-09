@@ -1,0 +1,95 @@
+<body>
+    <div id="sub-detail-header">
+        <p class="sub-main-title"><span class="sub-prd-name">치오 팝칩 파프리카</span></p>
+        <img id="sub-detail-close" class="sub-detail-close" src="img/x_icon.png">
+        <hr class="sub-border-divider" />
+    </div>
+
+    <div id="sub-detail-cont">
+        <div id="detail-plot-cont">
+            <div id="detail-plot-area">
+                <canvas id="detail-plot"></canvas>
+            </div>
+        </div>
+        <div id="detail-flavor-cont">
+            <div id="detail-flavor-note">
+                <p class="sub-title">▹ Top 5 Flavor Note</p>
+                <div id="flavor-note-group">
+                    <div id="flavor-note-top">
+                        <button class="btn flavor-note" id="flavor-btn">Spicy</button>
+                        <button class="btn flavor-note">Terpene</button>
+                        <button class="btn flavor-note">Pine</button>
+                        <button class="btn flavor-note">Buttery</button>
+                        <button class="btn flavor-note">Herbal</button>
+                        <button class="btn flavor-note">Earthy</button>
+                        <button class="btn flavor-note" disabled>Fatty</button>
+                    </div>
+                    <div id="flavor-note-bottom">
+                        <button class="btn flavor-note" disabled>Citrus</button>
+                        <button class="btn flavor-note" disabled>Woody</button>
+                        <button class="btn flavor-note" disabled>Floral</button>
+                        <button class="btn flavor-note" disabled>Pungent</button>
+                        <button class="btn flavor-note" disabled>Creamy</button>
+                        <button class="btn flavor-note" disabled>Sweet</button>
+                        <button class="btn flavor-note" disabled>Fresh</button>
+                    </div>
+                </div>
+            </div>
+            <div id="detail-mixed-info">
+                <p class="sub-title">▹ 화합물 정보</p>
+                <%- include('sub_table.ejs') %>
+            </div>
+            <div id="detail-mixed-flavor-info">
+                <p class="sub-title">▹ Flavor 화합물 정보</p>
+                <div id="flavor-info-cont">
+                    <div class="flavor-info-key">
+                        <ul>
+                            <li>화합물질명</li>
+                            <li>Flavor Note</li>
+                            <li>향 특성</li>
+                            <li>향 강도</li>
+                            <li>맛 특성</li>
+                            <li>발견 식품</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value">
+                        <ul>
+                            <li>β-Myrcene</li>
+                            <li>Herbal, <span class="sub-prd-attr">Spicy</span>, Earthy, Fruity, Floral</li>
+                            <li>허브 및 꽃 향</li>
+                            <li>강함</li>
+                            <li>허브맛, 약간 쌉싸름한 맛(Bitter)</li>
+                            <li>홉, 망고, 허브, 향신료</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-key">
+                        <ul>
+                            <li>화학식</li>
+                            <li>분류</li>
+                            <li>CAS 번호</li>
+                            <li>분자량</li>
+                            <li>용해도</li>
+                            <li>화학반응</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value">
+                        <ul>
+                            <li>C10H16</li>
+                            <li>Terpene</li>
+                            <li>123-35-3</li>
+                            <li>136.23</li>
+                            <li>지용성</li>
+                            <li>자연 발효 과정</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sub-detail-footer"></div>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/sub_detail_polar_chart.js"></script>

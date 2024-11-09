@@ -1,0 +1,60 @@
+<body>
+    <div id="sub-detail-header">
+        <p class="sub-main-title">
+            <span class="sub-prd-name">칩포테토 오리지널</span> vs
+            <span class="sub-prd-name">치오 팝칩 파프리카</span>
+        </p>
+        <img id="sub-compare-close" class="sub-detail-close" src="img/x_icon.png">
+        <hr class="sub-border-divider" />
+    </div>
+
+    <div id="sub-detail-cont">
+        <div id="compare-plot-cont">
+            <div id="detail-plot-area">
+                <canvas id="compare-plot"></canvas>
+            </div>
+        </div>
+        <div id="compare-flavor-cont">
+            <div id="compare-flavor-note">
+                <p class="sub-title">▹ 유사 Flavor Note</p>
+                <div class="compare-note-group">
+                    <div id="flavor-note-top">
+                        <button class="btn flavor-note flavor-note-disable">Mushroom</button>
+                        <button class="btn flavor-note flavor-note-disable">Fishy</button>
+                        <button class="btn flavor-note flavor-note-disable">MildlySweet</button>
+                    </div>
+                    <div id="flavor-note-bottom">
+                        <button class="btn flavor-note flavor-note-disable" disabled>Sweet</button>
+                        <button class="btn flavor-note flavor-note-disable" disabled>Fresh</button>
+                        <button class="btn flavor-note flavor-note-disable" disabled>Creamy</button>
+                    </div>
+                </div>
+            </div>
+            <div id="compare-flavor-note">
+                <p class="sub-title">▹ 극단 Flavor Note</p>
+                <div class="compare-note-group">
+                    <div id="flavor-note-top">
+                        <button class="btn flavor-note flavor-note-disable">Spicy</button>
+                        <button class="btn flavor-note flavor-note-disable">Pine</button>
+                        <button class="btn flavor-note flavor-note-disable">Terpene</button>
+                    </div>
+                    <div id="flavor-note-bottom">
+                        <button class="btn flavor-note flavor-note-disable" disabled>Nutty</button>
+                        <button class="btn flavor-note flavor-note-disable" disabled>Malty</button>
+                        <button class="btn flavor-note flavor-note-disable" disabled>Buttery</button>
+                    </div>
+                </div>
+            </div>
+            <div id="detail-compare-info">
+                <p class="sub-title">▹ 화합물 정보</p>
+                <%- include('sub_compare_table.ejs') %>
+            </div>
+        </div>
+    </div>
+
+    <div id="sub-detail-footer"></div>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/sub_compare_radar_chart.js"></script>

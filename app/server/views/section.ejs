@@ -1,0 +1,40 @@
+<head>
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+    
+</head>
+
+<body>
+    <div id="section-body">
+
+        <div id="pca-plot-title">" NONGSHIM always find a better flavor "</div>
+        <div id="pca-plot-cont">
+            <div id="pca-plot">
+                <div id="pca-plot-inner"></div>
+            </div>
+        </div>
+    
+        <div id="pca-table-cont">
+            <div id="pca-table-filter">
+                <%- include('pcs_filter.ejs') %>
+            </div>
+            <hr class="border-divider">
+            <div id="pca-table">
+                <%- include('pcs_table.ejs') %>
+            </div>
+        </div>
+
+    </div>
+    <div id="prd-scatter-circle"></div>
+    <div id="prd-scatter-menu-cont">
+        <p id="prd-scatter-name">치오 팝칩 파프리카</p>
+        <div id="prd-scatter-menu">
+            <p id="detail-btn" class="scatter-menu-list">Flavor Note 분석</p>
+            <p id="similar-btn" class="scatter-menu-list">유사도 분석(Flavor)</p>
+        </div>
+    </div>
+</body>
+
+
+<script src="js/pcs_plot.js"></script>
+<script src="js/pcs_table.js"></script>
+<script src="js/section.js"></script>
