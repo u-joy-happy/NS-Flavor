@@ -1,6 +1,6 @@
 <head>
     <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
-    
+    <link rel="stylesheet" href="css/arrow_label.css">
 </head>
 
 <body>
@@ -9,32 +9,64 @@
         <div id="pca-plot-title">" NONGSHIM always find a better flavor "</div>
         <div id="pca-plot-cont">
             <div id="pca-plot">
+                <div id="pca-arrow-label">
+                    <div id="arrow-label-Caramel" class="arrow-label-item">Caramel</div>
+                    <div id="arrow-label-Citrus" class="arrow-label-item">Citrus</div>
+                    <div id="arrow-label-Earthy" class="arrow-label-item">Earthy</div>
+                    <div id="arrow-label-Floral" class="arrow-label-item">Floral</div>
+                    <div id="arrow-label-Fruity" class="arrow-label-item">Fruity</div>
+                    <div id="arrow-label-Green" class="arrow-label-item">Green</div>
+                    <div id="arrow-label-Herbal" class="arrow-label-item">Herbal</div>
+                    <div id="arrow-label-Malty" class="arrow-label-item">Malty</div>
+                    <div id="arrow-label-Meaty" class="arrow-label-item">Meaty</div>
+                    <div id="arrow-label-Mushroom" class="arrow-label-item">Mushroom</div>
+                    <div id="arrow-label-Nutty" class="arrow-label-item">Nutty</div>
+                    <div id="arrow-label-Pine" class="arrow-label-item">Pine</div>
+                    <div id="arrow-label-Pungent" class="arrow-label-item">Pungent</div>
+                    <div id="arrow-label-Roasted" class="arrow-label-item">Roasted</div>
+                    <div id="arrow-label-Savory" class="arrow-label-item">Savory</div>
+                    <div id="arrow-label-Sour" class="arrow-label-item">Sour</div>
+                    <div id="arrow-label-Sulfurous" class="arrow-label-item">Sulfurous</div>
+                    <div id="arrow-label-Sweet" class="arrow-label-item">Sweet</div>
+                    <div id="arrow-label-Woody" class="arrow-label-item">Woody</div>
+                    <div id="arrow-label-Buttery" class="arrow-label-item">Buttery</div>
+                    <div id="arrow-label-Creamy" class="arrow-label-item">Creamy</div>
+                    <div id="arrow-label-Rancid" class="arrow-label-item">Rancid</div>
+                    <div id="arrow-label-Fresh" class="arrow-label-item">Fresh</div>
+                    <div id="arrow-label-Vanilla" class="arrow-label-item">Vanilla</div>
+                    <div id="arrow-label-Fishy" class="arrow-label-item">Fishy</div>
+                    <div id="arrow-label-Fatty" class="arrow-label-item">Fatty</div>
+                    <div id="arrow-label-Warm-Spicy" class="arrow-label-item">Warm-Spicy</div>
+                    <div id="arrow-label-Slightly-Spicy" class="arrow-label-item">Slightly-Spicy</div>
+                    <div id="arrow-label-Balsamic" class="arrow-label-item">Balsamic</div>
+                </div>
                 <div id="pca-plot-inner"></div>
             </div>
         </div>
-    
+
         <div id="pca-table-cont">
             <div id="pca-table-filter">
-                <%- include('pcs_filter.ejs') %>
+                <%- include('pca_filter.ejs') %>
             </div>
             <hr class="border-divider">
             <div id="pca-table">
-                <%- include('pcs_table.ejs') %>
+                <%- include('pca_table.ejs') %>
             </div>
         </div>
 
     </div>
     <div id="prd-scatter-circle"></div>
     <div id="prd-scatter-menu-cont">
-        <p id="prd-scatter-name">치오 팝칩 파프리카</p>
+        <p id="prd-scatter-name">포테토칩 오리지널</p>
         <div id="prd-scatter-menu">
             <p id="detail-btn" class="scatter-menu-list">Flavor Note 분석</p>
-            <p id="similar-btn" class="scatter-menu-list">유사도 분석(Flavor)</p>
+            <p id="similar-btn" class="scatter-menu-list">유사도 분석(군집)</p>
+            <p id="similar-chart-btn" class="scatter-menu-list">유사도 분석(거리)</p>
         </div>
     </div>
 </body>
 
 
-<script src="js/pcs_plot.js"></script>
-<script src="js/pcs_table.js"></script>
+<script src="js/pca_plot.js"></script>
+<script src="js/pca_table.js"></script>
 <script src="js/section.js"></script>

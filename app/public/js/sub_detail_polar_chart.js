@@ -1,24 +1,48 @@
 
 var data = {
     labels: [
-        'Red',
+        'Caramel',
+        'Citrus',
+        'Fruity',
         'Green',
-        'Yellow',
-        'Grey',
-        'Blue'
+        'Malty',
+        'Meaty',
+        'Nutty',
+        'Roasted',
+        'Savory',
+        'Sulfurous',
+        'Sweet',
     ],
     datasets: [{
-        label: 'My First Dataset',
-        data: [11, 16, 7, 3, 14],
+        // label: 'My First Dataset',
+        data: [
+            0.652346249,
+            -0.734052047,
+            0.349403663,
+            0.528281017,
+            1.262305557,
+            0.340411365,
+            0.713118334,
+            0.64048554,
+            0.937953579,
+            1.429767129,
+            0.417878208,
+        ],
         backgroundColor: [
-            'rgb(255, 99, 132)',
-            'rgb(75, 192, 192)',
-            'rgb(255, 205, 86)',
-            'rgb(201, 203, 207)',
-            'rgb(54, 162, 235)'
+            '#F25E86',
+            '#9163F2',
+            '#4BC0C0',
+            '#F29441',
+            '#F2AFC1',
+            '#38ABF2',
+            '#F2BA52',
+            '#4BBF70',
+            '#F26D5E',
+            '#C9CBCF',
+            '#4B76BF',
         ]
     }]
-    
+
 }
 
 var layout = {
@@ -29,11 +53,11 @@ var layout = {
         scales: {
             r: {
                 pointLabels: {
-                display: true,
-                centerPointLabels: true,
-                font: {
-                    size: 18
-                }
+                    display: true,
+                    centerPointLabels: true,
+                    font: {
+                        size: 18
+                    }
                 }
             }
         },

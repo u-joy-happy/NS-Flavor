@@ -352,8 +352,7 @@ ul.dropdown-menu .dropdown-item:active {
 }
 
 .sim-table {
-  width: 250px !important;
-  height: 300px;
+  width: 260px !important;
   font-size: 13px;
 }
 
@@ -420,7 +419,8 @@ ul.dropdown-menu .dropdown-item:active {
 .flavor-note {
   width: 120px;
   margin: 5px 5px 15px 5px;
-  padding: 5px;
+  padding: 0;
+  text-align: center;
 }
 
 #detail-mixed-info {
@@ -504,15 +504,15 @@ ul.dropdown-menu .dropdown-item:active {
   width: 180px;
   list-style: none;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 45px;
   padding: 0;
 }
 
 .flavor-info-value ul {
   list-style: none;
-  font-size: 18px;
-  line-height: 45px;
+  font-size: 16px;
+  line-height: 47px;
   padding: 0;
 }
 
@@ -553,6 +553,30 @@ ul.dropdown-menu .dropdown-item:active {
   z-index: 2;
 }
 
+#sub-similar-chart {
+  display: none;
+  float: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  width: 1600px;
+  height: 700px;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgb(236, 236, 236);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgb(236, 236, 236);
+  z-index: 2;
+}
+
+.sim-bar-chart {
+  max-width: 680px;
+  max-height: 500px;
+  min-width: 680px;
+  min-height: 500px;
+  margin: 35px 20px;
+}
+
 #sim-geo {
   width: 850px;
   height: 450px;
@@ -564,34 +588,53 @@ ul.dropdown-menu .dropdown-item:active {
   cursor: pointer;
 }
 
-#marker1 {
+/* 영국 */
+#marker1 { 
   position: fixed;
-  top: 230px;
-  left: 480px;
-}
-
-#marker2 {
-  position: fixed;
-  top: 240px;
-  left: 510px;
-}
-
-#marker3 {
-  position: fixed;
-  top: 255px;
+  top: 235px;
   left: 440px;
 }
 
-#marker4 {
+/* 네덜란드 */
+#marker2 {
   position: fixed;
-  top: 330px;
-  left: 625px;
+  top: 250px;
+  left: 460px;
 }
 
+/* 독일 */
+#marker3 {
+  position: fixed;
+  top: 240px;
+  left: 480px;
+}
+
+/* 인도 */
+#marker4 {
+  position: fixed;
+  top: 340px;
+  left: 640px;
+}
+
+/* 호주 */
 #marker5 {
   position: fixed;
-  top: 405px;
-  left: 490px;
+  top: 450px;
+  left: 780px;
+}
+
+/* 태국 */
+#marker6 {
+  position: fixed;
+  top: 345px;
+  left: 705px;
+}
+
+/* 멕시코 */
+#marker7 {
+  position: fixed;
+  top: 310px;
+  left: 190px;
 }
 
 .marker-info {
@@ -621,32 +664,44 @@ ul.dropdown-menu .dropdown-item:active {
 
 #marker1-info {
   display: none;
-  top: 120px;
-  left: 480px;
+  top: 150px;
+  left: 300px;
 }
 
 #marker2-info {
-  display: none;
-  top: 180px;
-  left: 550px;
-}
-
-#marker3-info {
   display: none;
   top: 250px;
   left: 250px;
 }
 
+#marker3-info {
+  display: none;
+  top: 180px;
+  left: 550px;
+}
+
 #marker4-info {
   display: none;
   top: 330px;
-  left: 670px;
+  left: 450px;
 }
 
 #marker5-info {
   display: none;
-  top: 400px;
-  left: 300px;
+  top: 450px;
+  left: 590px;
+}
+
+#marker6-info {
+  display: none;
+  top: 280px;
+  left: 750px;
+}
+
+#marker7-info {
+  display: none;
+  top: 320px;
+  left: 230px;
 }
 
 #sub-flavor-detail {
@@ -714,14 +769,28 @@ ul.dropdown-menu .dropdown-item:active {
 
 #flavor-label1 {
   position: fixed;
-  top: 360px;
-  left: 680px;
+  top: 110px;
+  left: 140px;
 }
 
 #flavor-label2 {
   position: fixed;
-  top: 390px;
-  left: 860px;
+  top: 220px;
+  left: 210px;
+}
+
+#flavor-label3 {
+  position: fixed;
+  top: 155px;
+  left: 155px;
+}
+
+#flavor-label4 {
+  position: fixed;
+  top: 385px;
+  left: 870px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flavor-name {
@@ -739,8 +808,13 @@ ul.dropdown-menu .dropdown-item:active {
   height: 30px;
   display: block;
   margin-top: 5px;
-  margin-left: auto;
+  /* margin-left: auto; */
   margin-right: auto;
+}
+
+#flavor-label4 .flavor-arrow-icon {
+  margin-left: auto;
+  /* margin-right: 0; */
 }
 
 #report-flavor-info-cont {
@@ -779,24 +853,23 @@ ul.dropdown-menu .dropdown-item:active {
   position: fixed;
   width: 28px;
   height: 28px;
-  background-color: #b04040;
+  background-color: #D9A0D5;
   border: 3px solid white;
   border-radius: 50%;
-  top: 550px;
-  left: 650px;
+  top: 460px;
+  left: 375px;
 }
 
 #prd-scatter-menu-cont {
   display: none;
   position: fixed;
-  /* width: 22px; */
   height: fit-content;
-  top: 580px;
-  left: 650px;
+  top: 500px;
+  left: 310px;
 }
 
 #prd-scatter-name {
-  background-color: #b04040;
+  background-color: #D9A0D5;
   border: 2px solid white;
   border-radius: 10px;
   color: white;
@@ -818,7 +891,7 @@ ul.dropdown-menu .dropdown-item:active {
   text-decoration: underline;
 }
 
-#prd-scatter-menu .scatter-menu-list:hover{
+#prd-scatter-menu .scatter-menu-list:hover {
   color: #5A5A5A;
   cursor: pointer;
 }
@@ -866,6 +939,7 @@ button.flavor-note:disabled {
 .compare-note-group button.flavor-note {
   margin-left: 15px;
   margin-right: 15px;
+  padding: 6px 0;
 }
 
 button.flavor-note-disable:hover,

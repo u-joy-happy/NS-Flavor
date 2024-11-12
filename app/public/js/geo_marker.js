@@ -3,7 +3,9 @@ const markers = [
     { marker: document.getElementById("marker2"), info: document.getElementById("marker2-info") },
     { marker: document.getElementById("marker3"), info: document.getElementById("marker3-info") },
     { marker: document.getElementById("marker4"), info: document.getElementById("marker4-info") },
-    { marker: document.getElementById("marker5"), info: document.getElementById("marker5-info") }
+    { marker: document.getElementById("marker5"), info: document.getElementById("marker5-info") },
+    { marker: document.getElementById("marker6"), info: document.getElementById("marker6-info") },
+    { marker: document.getElementById("marker7"), info: document.getElementById("marker7-info") },
 ];
 
 function hideAllInfos() {

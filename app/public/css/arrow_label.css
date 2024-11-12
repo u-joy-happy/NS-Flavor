@@ -1,0 +1,161 @@
+.hoverlayer .hovertext {
+	/* z-index: 10; */
+}
+
+#pca-arrow-label {
+    position: fixed;
+    top: 505px;
+    left: 450px;
+    /* z-index: -1; */
+}
+
+.arrow-label-item {
+    position: absolute;
+    white-space: pre;
+	background-color: rgb(255, 255, 255, 0.6);
+}
+
+#arrow-label-Caramel {
+	top: calc(-1.198137566px * 33);
+	left: calc(-3.411309772px * 40);
+}
+
+#arrow-label-Citrus {
+	top: calc(-3.122795017px * 33);
+	left: calc(5.39884487px * 40);
+}
+
+#arrow-label-Earthy {
+	top: calc(3.012795433px * 33);
+	left: calc(3.123085703px * 40);
+}
+
+#arrow-label-Floral {
+	top: calc(6.102274171px * 33);
+	left: calc(0.034739266px * 40);
+}
+
+#arrow-label-Fruity {
+	top: calc(4.190712724px * 33);
+	left: calc(-4.792580878px * 40);
+}
+
+#arrow-label-Green {
+	top: calc(2.692847821px * 33);
+	left: calc(-4.237300163px * 40 - 10px);
+}
+
+#arrow-label-Herbal {
+	top: calc(-0.306388432px * 33);
+	left: calc(6.132789316px * 40);
+}
+
+#arrow-label-Malty {
+	top: calc(-8.34722797px * 33);
+	left: calc(-1.657658973px * 40);
+}
+
+#arrow-label-Meaty {
+	top: calc(-2.490001214px * 33);
+	left: calc(-5.406360235px * 40);
+}
+
+#arrow-label-Mushroom {
+	top: calc(2.036313439px * 33);
+	left: calc(-0.335067915px * 40);
+}
+
+#arrow-label-Nutty {
+	top: calc(-5.238057732px * 33 + 30px);
+	left: calc(-4.988810443px * 40 + 30px);
+}
+
+#arrow-label-Pine {
+	top: calc(0.301504988px * 33);
+	left: calc(5.873606157px * 40 - 20px);
+}
+
+#arrow-label-Pungent {
+	top: calc(-5.057116454px * 33);
+	left: calc(2.251763962px * 40);
+}
+
+#arrow-label-Roasted {
+	top: calc(-5.280986807px * 33 - 10px);
+	left: calc(-5.028392729px * 40);
+}
+
+#arrow-label-Savory {
+	top: calc(-1.793093767px * 33);
+	left: calc(-4.770771582px * 40);
+}
+
+#arrow-label-Sour {
+	top: calc(-1.054590842px * 33);
+	left: calc(3.416589443px * 40);
+}
+
+#arrow-label-Sulfurous {
+	top: calc(-6.752905176px * 33);
+	left: calc(0.075119828px * 40);
+}
+
+#arrow-label-Sweet {
+	top: calc(7.1200139px * 33);
+	left: calc(-2.075496763px * 40);
+}
+
+#arrow-label-Woody {
+	top: calc(0.432521489px * 33 + 20px);
+	left: calc(5.91038138px * 40 + 10px);
+}
+
+#arrow-label-Buttery {
+	top: calc(2.460679355px * 33 - 10px);
+	left: calc(-2.870351539px * 40);
+}
+
+#arrow-label-Creamy {
+	top: calc(2.664242862px * 33 + 10px);
+	left: calc(-3.257113592px * 40);
+}
+
+#arrow-label-Rancid {
+	top: calc(3.473371408px * 33);
+	left: calc(-2.438198365px * 40);
+}
+
+#arrow-label-Fresh {
+	top: calc(-1.945705662px * 33);
+	left: calc(4.392380504px * 40);
+}
+
+#arrow-label-Vanilla {
+	top: calc(2.620795516px * 33);
+	left: calc(0.764288344px * 40);
+}
+
+#arrow-label-Fishy {
+	top: calc(-2.018997389px * 33);
+	left: calc(-0.486920621px * 40);
+}
+
+#arrow-label-Fatty {
+	top: calc(3.053943937px * 33);
+	left: calc(1.85450245px * 40);
+}
+
+#arrow-label-Warm-Spicy {
+	top: calc(-1.239494753px * 33);
+	left: calc(4.627090541px * 40);
+}
+
+#arrow-label-Slightly-Spicy {
+	top: calc(1.892330448px * 33);
+	left: calc(2.378618173px * 40);
+}
+
+#arrow-label-Balsamic {
+	top: calc(-1.171982758px * 33);
+	left: calc(0.03775129px * 40);
+}
