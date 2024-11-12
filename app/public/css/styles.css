@@ -769,26 +769,26 @@ ul.dropdown-menu .dropdown-item:active {
 
 #flavor-label1 {
   position: fixed;
-  top: 110px;
-  left: 140px;
+  top: 380px;
+  left: 870px;
 }
 
 #flavor-label2 {
   position: fixed;
-  top: 220px;
-  left: 210px;
+  top: 360px;
+  left: 620px;
 }
 
 #flavor-label3 {
   position: fixed;
-  top: 155px;
-  left: 155px;
+  top: 380px;
+  left: 770px;
 }
 
 #flavor-label4 {
   position: fixed;
-  top: 385px;
-  left: 870px;
+  top: 370px;
+  left: 210px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -808,13 +808,14 @@ ul.dropdown-menu .dropdown-item:active {
   height: 30px;
   display: block;
   margin-top: 5px;
-  /* margin-left: auto; */
+  margin-left: auto;
   margin-right: auto;
 }
 
+#flavor-label2 .flavor-arrow-icon,
 #flavor-label4 .flavor-arrow-icon {
-  margin-left: auto;
-  /* margin-right: 0; */
+  margin-left: 0;
+  /* margin-right: auto; */
 }
 
 #report-flavor-info-cont {

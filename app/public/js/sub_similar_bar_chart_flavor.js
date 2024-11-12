@@ -32,7 +32,7 @@ var layout = {
             },
             title: {
               display: true,
-              text: 'Flavor 강도 기준 유사도 Top 10',
+              text: 'Flavor 강도 기준 거리 Top 10',
               padding: 25,
               font: {
                   size: 22
