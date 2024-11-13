@@ -1,7 +1,7 @@
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 
 * {
-  font-family: 'Nanum Barun Gothic';
+  font-family: 'NanumSquare', sans-serif;
 }
 
 /* 
@@ -138,6 +138,13 @@ section#section {
 
 #pca-table td {
   font-size: 13px;
+  padding: .2rem;
+}
+
+#pca-table thead th {
+  font-size: 13px;
+  padding: .2rem;
+  text-align: center;
 }
 
 #pca-table thead {
@@ -184,6 +191,10 @@ section#section {
   background-repeat: no-repeat;
   background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
   background-attachment: local, local, scroll, scroll;
+}
+
+.scroll-box::-webkit-scrollbar {
+  display: none;
 }
 
 #pca-table-filter .filter-item {
@@ -261,8 +272,22 @@ div.form-check {
   padding: 0;
 }
 
+.input-checkbox {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 ul.dropdown-menu {
   min-width: 110px;
+  font-size: 13px;
+}
+
+a.dropdown-item {
+  padding: 0 10px;
+}
+
+.form-check-label {
+  line-height: 24px;
 }
 
 ul.dropdown-menu .dropdown-item:active {
@@ -421,6 +446,7 @@ ul.dropdown-menu .dropdown-item:active {
   clear: both;
   display: block;
   margin: 10px;
+  width: 930px;
 }
 
 .flavor-note {
@@ -856,7 +882,7 @@ ul.dropdown-menu .dropdown-item:active {
   margin-bottom: 10px;
 }
 
-#prd-scatter-circle {
+.prd-scatter-circle {
   display: none;
   position: fixed;
   width: 28px;
@@ -868,7 +894,7 @@ ul.dropdown-menu .dropdown-item:active {
   left: 375px;
 }
 
-#prd-scatter-menu-cont {
+.prd-scatter-menu-cont {
   display: none;
   position: fixed;
   height: fit-content;
@@ -876,30 +902,31 @@ ul.dropdown-menu .dropdown-item:active {
   left: 310px;
 }
 
-#prd-scatter-name {
+.prd-scatter-name {
   background-color: #D9A0D5;
   border: 2px solid white;
   border-radius: 10px;
   color: white;
   margin: 0;
   padding: 3px 15px;
-  font-size: 18px;
+  font-size: 15px;
 }
 
-#prd-scatter-menu {
+.prd-scatter-menu {
   background-color: white;
   padding: 5px 15px;
   border: 1px solid #5a5a5a;
   border-radius: 10px;
+  font-size: 13px;
 }
 
-#prd-scatter-menu .scatter-menu-list {
+.prd-scatter-menu .scatter-menu-list {
   /* background-color: rgb(255, 255, 255, 0.8); */
   margin: 7px 0;
   text-decoration: underline;
 }
 
-#prd-scatter-menu .scatter-menu-list:hover {
+.prd-scatter-menu .scatter-menu-list:hover {
   color: #5A5A5A;
   cursor: pointer;
 }

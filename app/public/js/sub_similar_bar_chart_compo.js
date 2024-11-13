@@ -38,6 +38,10 @@ var layout = {
                   size: 22
               }
             },
+            datalabels: {
+                anchor: 'end',
+                align: 'end', 
+            }
         },
         scales: {
             x: {
@@ -45,6 +49,9 @@ var layout = {
                 grid: {
                     display: false
                 },
+                ticks: {
+                    display: false
+                }
             },
             y: {
                 grid: {
@@ -56,6 +63,7 @@ var layout = {
             },
         },
     },
+    plugins: [ChartDataLabels] // 플러그인 활성화
 }
 
 const compoBar = document.getElementById('compo-bar-chart');

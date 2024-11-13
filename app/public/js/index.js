@@ -1,7 +1,6 @@
 window.onload = function () {
-    console.log("load complete");
-    console.log(document.getElementById("prd-btn"));
     const prdBtn = document.getElementById("prd-btn");
+    const prdBtn2 = document.getElementById("prd-btn2");
     const detailBtn = document.getElementById("detail-btn");
     const compareBtn = document.getElementById("compare-btn");
     const compareReportBtn = document.getElementById("compare-report-btn");
@@ -22,7 +21,9 @@ window.onload = function () {
     const closeReportBtn = document.getElementById("sub-report-close");
 
     const prdCircle = document.getElementById("prd-scatter-circle");
+    const prdCircle2 = document.getElementById("prd-scatter-circle2");
     const prdMenu = document.getElementById("prd-scatter-menu-cont");
+    const prdMenu2 = document.getElementById("prd-scatter-menu-cont2");
     const subDetail = document.getElementById("sub-detail");
     const subSimilar = document.getElementById("sub-similar");
     const subSimilarChart = document.getElementById("sub-similar-chart");
@@ -34,9 +35,10 @@ window.onload = function () {
     const detailMixedFlavorInfo = document.getElementById("detail-mixed-flavor-info");
 
 
-
-
     prdBtn.addEventListener("click", (event) => {
+        prdCircle2.style.display = "none";
+        prdMenu2.style.display = "none";
+
         prdCircle.style.display = "block";
         prdMenu.style.display = "block";
         event.stopPropagation();
@@ -50,10 +52,30 @@ window.onload = function () {
         event.stopPropagation();
     });
 
+    prdBtn2.addEventListener("click", (event) => {
+        prdCircle.style.display = "none";
+        prdMenu.style.display = "none";
+
+        prdCircle2.style.display = "block";
+        prdMenu2.style.display = "block";
+        event.stopPropagation();
+    });
+
+    prdCircle2.addEventListener("click", (event) => {
+        event.stopPropagation();
+    });
+
+    prdMenu2.addEventListener("click", (event) => {
+        event.stopPropagation();
+    });
+
     body.addEventListener("click", () => {
         if (getComputedStyle(prdCircle).display == "block") {
             prdCircle.style.display = "none";
             prdMenu.style.display = "none";
+        } else if (getComputedStyle(prdCircle2).display == "block") {
+            prdCircle2.style.display = "none";
+            prdMenu2.style.display = "none";
         }
     });
 
