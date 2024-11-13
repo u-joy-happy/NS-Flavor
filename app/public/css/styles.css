@@ -916,16 +916,32 @@ ul.dropdown-menu .dropdown-item:active {
   background-color: #D9A0D5;
   border: 3px solid white;
   border-radius: 50%;
-  top: 460px;
-  left: 375px;
+}
+
+#prd-scatter-circle {
+  top: 435px;
+  left: 325px;
+}
+
+#prd-scatter-circle2 {
+  top: 530px;
+  left: 590px;
 }
 
 .prd-scatter-menu-cont {
   display: none;
   position: fixed;
   height: fit-content;
-  top: 500px;
-  left: 310px;
+}
+
+#prd-scatter-menu-cont {
+  top: 480px;
+  left: 270px;
+}
+
+#prd-scatter-menu-cont2 {
+  top: 570px;
+  left: 530px;
 }
 
 .prd-scatter-name {
