@@ -607,7 +607,33 @@ ul.dropdown-menu .dropdown-item:active {
   max-height: 500px;
   min-width: 680px;
   min-height: 500px;
-  margin: 35px 20px;
+  margin: 40px 20px;
+}
+
+#bar-range {
+  position: absolute;
+  height: fit-content;
+  width: 150px;
+  right: 50px;
+  margin-top: 15px;
+}
+
+#range-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.custom-range::-webkit-slider-thumb {
+  background: gray;
+}
+
+.custom-range::-moz-range-thumb {
+  background: gray;
+}
+
+.custom-range::-ms-thumb {
+  background: gray;
 }
 
 #sim-geo {
