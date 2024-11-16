@@ -85,6 +85,9 @@ section#section {
 }
 
 #pca-plot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 720px;
   height: 650px;
   background-color: white;
@@ -901,71 +904,6 @@ ul.dropdown-menu .dropdown-item:active {
 .report-flavor-info-key li,
 .report-flavor-info-value li {
   margin-bottom: 10px;
-}
-
-.prd-scatter-circle {
-  display: none;
-  position: fixed;
-  width: 28px;
-  height: 28px;
-  background-color: #D9A0D5;
-  border: 3px solid white;
-  border-radius: 50%;
-}
-
-#prd-scatter-circle {
-  top: 435px;
-  left: 325px;
-}
-
-#prd-scatter-circle2 {
-  top: 530px;
-  left: 590px;
-}
-
-.prd-scatter-menu-cont {
-  display: none;
-  position: fixed;
-  height: fit-content;
-}
-
-#prd-scatter-menu-cont {
-  top: 480px;
-  left: 270px;
-}
-
-#prd-scatter-menu-cont2 {
-  top: 570px;
-  left: 530px;
-}
-
-.prd-scatter-name {
-  background-color: #D9A0D5;
-  border: 2px solid white;
-  border-radius: 10px;
-  color: white;
-  margin: 0;
-  padding: 3px 15px;
-  font-size: 15px;
-}
-
-.prd-scatter-menu {
-  background-color: white;
-  padding: 5px 15px;
-  border: 1px solid #5a5a5a;
-  border-radius: 10px;
-  font-size: 13px;
-}
-
-.prd-scatter-menu .scatter-menu-list {
-  /* background-color: rgb(255, 255, 255, 0.8); */
-  margin: 7px 0;
-  text-decoration: underline;
-}
-
-.prd-scatter-menu .scatter-menu-list:hover {
-  color: #5A5A5A;
-  cursor: pointer;
 }
 
 button.btn {

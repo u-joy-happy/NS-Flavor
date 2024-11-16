@@ -1,14 +1,80 @@
+.prd-tooltip {
+	position: absolute;
+	top: 490px;
+	left: 350px;
+	z-index: 2;
+}
+
+.prd-scatter-circle {
+	width: 28px;
+	height: 28px;
+	background-color: #D9A0D5;
+	border: 3px solid white;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.dynamic-tooltip {
+	position: absolute;
+	width: 160px;
+	height: 160px;
+}
+
+#prd-tooltip1 {
+	display: none;
+	top: calc(-1.38px * 30);
+	left: calc(-2.26px * 38 - 5px);
+}
+
+#prd-tooltip2 {
+	display: none;
+	top: calc(1.57px * 30);
+	left: calc(4.28px * 38);
+}
+
+.prd-scatter-name {
+	background-color: #D9A0D5;
+	border: 2px solid white;
+	border-radius: 10px;
+	color: white;
+	margin: 0;
+	padding: 3px 15px;
+	font-size: 15px;
+	text-align: center;
+}
+
+.prd-scatter-menu {
+	background-color: white;
+	padding: 5px 15px;
+	border: 1px solid #5a5a5a;
+	border-radius: 10px;
+	font-size: 13px;
+}
+
+.prd-scatter-menu .scatter-menu-list {
+	/* background-color: rgb(255, 255, 255, 0.8); */
+	margin: 7px 0;
+	text-decoration: underline;
+}
+
+.prd-scatter-menu .scatter-menu-list:hover {
+	color: #5A5A5A;
+	cursor: pointer;
+}
+
+
+
 #pca-arrow-label {
-    position: fixed;
-    top: 505px;
-    left: 480px;
-    /* z-index: -1; */
+	position: absolute;
+	/* top: 505px;
+	left: 480px; */
+	/* z-index: -1; */
 	font-size: 13px;
 }
 
 .arrow-label-item {
-    position: absolute;
-    white-space: pre;
+	position: absolute;
+	white-space: pre;
 	background-color: rgb(255, 255, 255, 0.6);
 }
 
