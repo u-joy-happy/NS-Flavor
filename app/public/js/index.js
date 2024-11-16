@@ -7,7 +7,7 @@ window.onload = function () {
     const similarBtn = document.getElementById("similar-btn");
     const similarChartBtn = document.getElementById("similar-chart-btn");
     const flavorBtn = document.getElementById("flavor-btn");
-    const flavorReportBtn = document.getElementById("flavor-report-btn");
+    // const flavorReportBtn = document.getElementById("flavor-report-btn");
 
     const overlay1 = document.getElementById("overlay1");
     const overlay2 = document.getElementById("overlay2");
@@ -18,7 +18,7 @@ window.onload = function () {
     const closeSimilarChartBtn = document.getElementById("sub-similar-chart-close");
     const closeCompareBtn = document.getElementById("sub-compare-close");
     const closeCompareReportBtn = document.getElementById("sub-compare-report-close");
-    const closeReportBtn = document.getElementById("sub-report-close");
+    // const closeReportBtn = document.getElementById("sub-report-close");
 
     const prdCircle = document.getElementById("prd-scatter-circle");
     const prdCircle2 = document.getElementById("prd-scatter-circle2");
@@ -28,7 +28,7 @@ window.onload = function () {
     const subSimilar = document.getElementById("sub-similar");
     const subSimilarChart = document.getElementById("sub-similar-chart");
     const subCompare = document.getElementById("sub-compare");
-    const subFlavorDetail = document.getElementById("sub-flavor-detail");
+    // const subFlavorDetail = document.getElementById("sub-flavor-detail");
     const subCompareFlavor = document.getElementById("sub-flavor-compare");
 
     const detailMixedInfo = document.getElementById("detail-mixed-info");
@@ -134,15 +134,15 @@ window.onload = function () {
         }
     });
 
-    flavorReportBtn.addEventListener("click", () => {
-        overlay2.style.display = "block";
-        subFlavorDetail.style.display = "block";
-    });
+    // flavorReportBtn.addEventListener("click", () => {
+    //     overlay2.style.display = "block";
+    //     subFlavorDetail.style.display = "block";
+    // });
 
-    closeReportBtn.addEventListener("click", () => {
-        overlay2.style.display = "none";
-        subFlavorDetail.style.display = "none";
-    });
+    // closeReportBtn.addEventListener("click", () => {
+    //     overlay2.style.display = "none";
+    //     subFlavorDetail.style.display = "none";
+    // });
 
     compareReportBtn.addEventListener("click", () => {
         overlay2.style.display = "block";

@@ -56,8 +56,17 @@ var layout = {
                     display: true,
                     centerPointLabels: true,
                     font: {
-                        size: 18
+                        size: 15
                     }
+                },
+                grid: {
+                    color: 'white',
+                    circular: true,
+                    z: 1,
+                    lineWidth: 2
+                },
+                ticks: {
+                    display: false,
                 }
             }
         },
@@ -71,7 +80,29 @@ var layout = {
         //     beginAtZero: true
         //     }
         // }
-    }
+    },
+    // plugins: {
+    //     afterDraw: (chart) => {
+    //         const { ctx, chartArea, scales } = chart;
+    //         const radiusSteps = scales.r.ticks.length;
+
+    //         for (let i = 1; i < radiusSteps; i++) {
+    //             const radius = (scales.r.getDistanceFromCenterForValue(scales.r.ticks[i].value));
+    //             ctx.beginPath();
+    //             ctx.arc(
+    //                 chartArea.width / 2 + chartArea.left,
+    //                 chartArea.height / 2 + chartArea.top,
+    //                 radius,
+    //                 0,
+    //                 2 * Math.PI
+    //             );
+    //             ctx.strokeStyle = 'white';
+    //             ctx.lineWidth = 1;
+    //             ctx.stroke();
+    //             ctx.closePath();
+    //         }
+    //     }
+    // }
 }
 
 

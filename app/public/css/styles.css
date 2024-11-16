@@ -101,18 +101,12 @@ section#section {
 }
 
 #pca-plot-title {
-  /* width: 750px; */
   height: 70px;
   line-height: 70px;
-  /* margin: 0 0 30px 0; */
   color: #5A5A5A;
   font-size: 25px;
-  font-family: serif;
   text-align: center;
-  /* background-color: white;
-  border: 1px solid rgb(236, 236, 236);
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgb(236, 236, 236); */
+  font-weight: bold;
 }
 
 #pca-table-cont {
@@ -537,14 +531,14 @@ ul.dropdown-menu .dropdown-item:active {
   width: 180px;
   list-style: none;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 45px;
   padding: 0;
 }
 
 .flavor-info-value ul {
   list-style: none;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 47px;
   padding: 0;
 }
@@ -702,7 +696,7 @@ ul.dropdown-menu .dropdown-item:active {
 }
 
 .marker-name {
-  font-size: 20px;
+  font-size: 15px;
   background-color: #d75555;
   border: 2px solid white;
   border-radius: 5px;
@@ -719,6 +713,7 @@ ul.dropdown-menu .dropdown-item:active {
 
 .marker-text p {
   margin: 0;
+  font-size: 12px;
 }
 
 #marker1-info {
