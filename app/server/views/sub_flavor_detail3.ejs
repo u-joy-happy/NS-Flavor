@@ -1,15 +1,21 @@
 <body>
     <div id="sub-detail-header">
-        <h5 class="sub-main-title"><span class="sub-prd-name">Pine</span> 에 대한 요약 보고서</h5>
-        <img id="sub-compare-report-close" class="sub-detail-close sec" src="img/x_icon.png">
+        <h5 class="sub-main-title"><span class="sub-prd-name">Savory</span> 에 대한 요약 보고서</h5>
+        <img id="sub-report-close" class="sub-detail-close sec" src="img/x_icon.png">
         <hr class="sub-border-divider" />
     </div>
-    
+
     <div id="sub-detail-cont">
         <div id="flavor-detail-inner">
             <div id="flavor-plot-cont">
-                <canvas id="flavor-compare-line-plot">
+                <canvas id="flavor-line-plot3" class="flavor-line-plot">
                 </canvas>
+                <div class="flavor-label-cont">
+                    <div id="flavor-label5" class="flavor-label">
+                        <div class="flavor-name">포카칩 오리지널</div>
+                        <img class="flavor-arrow-icon" src="img/down_arrow_icon.png">
+                    </div>
+                </div>
             </div>
             <div id="report-flavor-info-cont">
                 <div class="report-flavor-info-key">
@@ -27,33 +33,23 @@
                 </div>
                 <div class="report-flavor-info-value">
                     <ul>
-                        <li>-0.00000</li>
-                        <li>1.01130</li>
-                        <li>1.02273</li>
+                        <li>0.000000</li>
+                        <li>1.010363</li>
+                        <li>1.000000</li>
                         <li>&nbsp</li>
-                        <li>-0.54014</li>
-                        <li>-0.54014</li>
-                        <li>-0.54014</li>
-                        <li>0.56919</li>
-                        <li>3.16451</li>
+                        <li>-1.421492</li>
+                        <li>-0.460236</li>
+                        <li>-0.055497</li>
+                        <li>0.432358</li>
+                        <li>2.904158</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="flavor-label7" class="flavor-label">
-        <div class="flavor-name">치오 팝칩 파프리카</div>
-        <img class="flavor-arrow-icon" src="img/down_arrow_icon.png">
-    </div>
-
-    <div id="flavor-label8" class="flavor-label">
-        <div class="flavor-name">포테토칩 오리지널</div>
-        <img class="flavor-arrow-icon" src="img/down_arrow_icon.png">
-    </div>
-
     <div id="sub-detail-footer"></div>
 </body>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="js/sub_compare_flavor_line_chart.js"></script>
+<script src="js/sub_flavor_detail_line_chart3.js"></script>

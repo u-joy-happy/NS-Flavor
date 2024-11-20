@@ -811,7 +811,7 @@ ul.dropdown-menu .dropdown-item:active {
   left: 780px;
 }
 
-#sub-flavor-detail {
+.sub-flavor-detail {
   display: none;
   float: none;
   position: fixed;
@@ -858,9 +858,11 @@ ul.dropdown-menu .dropdown-item:active {
 
 #flavor-plot-cont {
   margin: 30px;
+  display: flex;
+  position: relative;
 }
 
-#flavor-line-plot {
+.flavor-line-plot {
   min-width: 900px;
   max-width: 900px;
   min-height: 350px;
@@ -874,30 +876,47 @@ ul.dropdown-menu .dropdown-item:active {
   max-height: 350px;
 }
 
+.flavor-label-cont {
+  position: absolute;
+}
+
+.flavor-label {
+  position: absolute;
+}
+
 #flavor-label1 {
-  position: fixed;
-  top: 380px;
-  left: 870px;
+  top: 230px;
+  left: 750px;
 }
 
 #flavor-label2 {
-  position: fixed;
-  top: 360px;
-  left: 620px;
+  top: 190px;
+  left: 510px;
 }
 
 #flavor-label3 {
-  position: fixed;
-  top: 380px;
-  left: 770px;
+  top: 240px;
+  left: 730px;
 }
 
 #flavor-label4 {
-  position: fixed;
-  top: 370px;
-  left: 210px;
-  margin-left: auto;
-  margin-right: auto;
+  top: 225px;
+  left: 590px;
+}
+
+#flavor-label5 {
+  top: 230px;
+  left: 725px;
+}
+
+#flavor-label2 .flavor-arrow-icon {
+  margin-left: 0;
+  /* margin-right: auto; */
+}
+
+#flavor-label3 .flavor-arrow-icon,
+#flavor-label4 .flavor-arrow-icon {
+  margin-right: 0;
 }
 
 .flavor-name {
@@ -908,6 +927,7 @@ ul.dropdown-menu .dropdown-item:active {
   text-align: center;
   /* line-height: 35px; */
   font-size: 15px;
+  white-space: pre;
 }
 
 .flavor-arrow-icon {
@@ -919,11 +939,6 @@ ul.dropdown-menu .dropdown-item:active {
   margin-right: auto;
 }
 
-#flavor-label2 .flavor-arrow-icon,
-#flavor-label4 .flavor-arrow-icon {
-  margin-left: 0;
-  /* margin-right: auto; */
-}
 
 #report-flavor-info-cont {
   display: flex;

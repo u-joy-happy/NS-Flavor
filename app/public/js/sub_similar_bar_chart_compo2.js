@@ -69,5 +69,5 @@ var layout = {
     plugins: [ChartDataLabels] // 플러그인 활성화
 }
 
-const compoBar2 = document.getElementById('compo-bar-chart');
+const compoBar2 = document.getElementById('compo-bar-chart2');
 new Chart(compoBar2, layout);

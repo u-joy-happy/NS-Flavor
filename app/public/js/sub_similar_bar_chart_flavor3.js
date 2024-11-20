@@ -67,5 +67,5 @@ var layout = {
     plugins: [ChartDataLabels] // 플러그인 활성화
 }
 
-const flavorBar3 = document.getElementById('flavor-bar-chart');
+const flavorBar3 = document.getElementById('flavor-bar-chart3');
 new Chart(flavorBar3, layout);

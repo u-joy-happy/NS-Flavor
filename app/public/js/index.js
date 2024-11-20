@@ -106,6 +106,7 @@ window.onload = function () {
         });
     });
 
+
     // detailBtn.addEventListener("click", () => {
     //     overlay1.style.display = "block";
     //     subDetail.style.display = "block";
@@ -142,8 +143,12 @@ window.onload = function () {
     document.querySelectorAll('.sub-detail-close').forEach(closeButton => {
         closeButton.addEventListener('click', () => {
             // 모든 팝업 숨기기
-            hideAllPopups();
-            initFlavorDetail();
+            if (!closeButton.classList.contains('sec')){
+                hideAllPopups();
+                initFlavorDetail();
+            } else {
+                hideAllSubPopups();
+            }
         });
     });
 
@@ -152,6 +157,14 @@ window.onload = function () {
         document.querySelectorAll('.sub-detail, .sub-similar, .sub-similar-chart').forEach(popup => {
             popup.style.display = 'none';
             overlay1.style.display = "none";
+        });
+    }
+
+    // 모든 팝업 숨기는 함수
+    function hideAllSubPopups() {
+        document.querySelectorAll('.sub-flavor-detail').forEach(popup => {
+            popup.style.display = 'none';
+            overlay2.style.display = "none";
         });
     }
 
@@ -221,6 +234,26 @@ window.onload = function () {
         });
     });
 
+    document.querySelectorAll('.table-prd-item').forEach(button => {
+        button.addEventListener('click', event => {
+            const reportProductName = event.target.getAttribute('data-product');
+
+            console.log(event.target);
+            document.querySelectorAll('.sub-flavor-detail').forEach(popup => {
+                popup.style.display = 'none';
+                overlay2.style.display = "none";
+            });
+
+            let popupToShow = document.querySelector(`.sub-flavor-detail[val="${reportProductName}"]`);
+
+            if (popupToShow) {
+                popupToShow.style.display = 'block';
+                overlay2.style.display = "block";
+
+            }
+        });
+    });
+
     compareBtn.addEventListener("click", () => {
         overlay1.style.display = "block";
         subCompare.style.display = "block";
@@ -247,15 +280,15 @@ window.onload = function () {
     //     }
     // });
 
-    flavorReportBtn.addEventListener("click", () => {
-        overlay2.style.display = "block";
-        subFlavorDetail.style.display = "block";
-    });
+    // flavorReportBtn.addEventListener("click", () => {
+    //     overlay2.style.display = "block";
+    //     subFlavorDetail.style.display = "block";
+    // });
 
-    closeReportBtn.addEventListener("click", () => {
-        overlay2.style.display = "none";
-        subFlavorDetail.style.display = "none";
-    });
+    // closeReportBtn.addEventListener("click", () => {
+    //     overlay2.style.display = "none";
+    //     subFlavorDetail.style.display = "none";
+    // });
 
     compareReportBtn.addEventListener("click", () => {
         overlay2.style.display = "block";
