@@ -392,7 +392,7 @@ ul.dropdown-menu .dropdown-item:active {
   max-width: 500px;
 }
 
-#similar-plot {
+.similar-plot {
   min-height: 230px;
   max-height: 230px;
   min-width: 500px;
@@ -636,7 +636,7 @@ ul.dropdown-menu .dropdown-item:active {
   background: gray;
 }
 
-#sim-geo {
+.sim-geo {
   width: 850px;
   height: 450px;
 }
@@ -648,7 +648,9 @@ ul.dropdown-menu .dropdown-item:active {
 }
 
 /* 영국 */
-#marker1 {
+#marker1,
+#marker8,
+#marker12 {
   position: fixed;
   top: 235px;
   left: 440px;
@@ -696,9 +698,37 @@ ul.dropdown-menu .dropdown-item:active {
   left: 190px;
 }
 
+/* 이탈리아 */
+#marker9,
+#marker13 {
+  position: fixed;
+  top: 270px;
+  left: 480px;
+}
+
+/* 미국 */
+#marker10,
+#marker14 {
+  position: fixed;
+  top: 280px;
+  left: 260px;
+}
+
+/* 한국 */
+#marker11,
+#marker15 {
+  position: fixed;
+  top: 285px;
+  left: 752px;
+}
+
 .marker-info {
   position: fixed;
   width: 180px;
+}
+
+.marker-info.hidden{
+  display: none;
 }
 
 .marker-name {
@@ -723,45 +753,62 @@ ul.dropdown-menu .dropdown-item:active {
 }
 
 #marker1-info {
-  display: none;
   top: 150px;
   left: 300px;
 }
 
 #marker2-info {
-  display: none;
   top: 250px;
   left: 250px;
 }
 
 #marker3-info {
-  display: none;
   top: 180px;
   left: 550px;
 }
 
 #marker4-info {
-  display: none;
   top: 330px;
   left: 450px;
 }
 
 #marker5-info {
-  display: none;
   top: 450px;
   left: 590px;
 }
 
 #marker6-info {
-  display: none;
   top: 280px;
   left: 750px;
 }
 
 #marker7-info {
-  display: none;
   top: 320px;
   left: 230px;
+}
+
+#marker8-info,
+#marker12-info {
+  top: 150px;
+  left: 300px;
+}
+
+#marker9-info,
+#marker13-info {
+  top: 320px;
+  left: 400px;
+}
+
+#marker10-info,
+#marker14-info {
+  top: 320px;
+  left: 230px;
+}
+
+#marker11-info,
+#marker15-info {
+  top: 320px;
+  left: 780px;
 }
 
 #sub-flavor-detail {

@@ -41,5 +41,5 @@ var layout = {
     },
 }
 
-const simLineArea2 = document.getElementById('similar-plot');
+const simLineArea2 = document.getElementById('similar-plot2');
 new Chart(simLineArea2, layout);
