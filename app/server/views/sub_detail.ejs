@@ -8,25 +8,25 @@
     <div id="sub-detail-cont">
         <div id="detail-plot-cont">
             <div id="detail-plot-area">
-                <canvas id="detail-plot"></canvas>
+                <canvas id="detail-plot" class="detail-plot"></canvas>
             </div>
         </div>
         <div id="detail-flavor-cont">
             <div id="detail-flavor-note">
-                <p class="sub-title">▹ Top 5 Flavor Note</p>
+                <p class="sub-title">▷ Top 5 Flavor Note</p>
                 <div id="flavor-note-group">
                     <div id="flavor-note-top">
-                        <!-- <button class="btn flavor-note" id="flavor-btn">Sulfurous</button> -->
-                        <button class="btn flavor-note" id="flavor-btn">Malty</button>
-                        <button class="btn flavor-note">Savory</button>
-                        <button class="btn flavor-note">Nutty</button>
-                        <button class="btn flavor-note">Caramel</button>
                         <button class="btn flavor-note">Roasted</button>
+                        <button class="btn flavor-note">Savory</button>
+                        <button class="btn flavor-note">Caramel</button>
+                        <button class="btn flavor-note">Malty</button>
+                        <button class="btn flavor-note">Nutty</button>
                         <button class="btn flavor-note" disabled>Green</button>
-                        <button class="btn flavor-note" disabled>Sweet</button>
+                        <button class="btn flavor-note" disabled>Fruity</button>
+                        <!-- <button class="btn flavor-note">Sulfurous</button> -->
                     </div>
                     <div id="flavor-note-bottom">
-                        <button class="btn flavor-note" disabled>Fruity</button>
+                        <button class="btn flavor-note" disabled>Sweet</button>
                         <button class="btn flavor-note" disabled>Meaty</button>
                         <button class="btn flavor-note" disabled>Citrus</button>
                         <button class="btn flavor-note" disabled>-</button>
@@ -36,12 +36,12 @@
                     </div>
                 </div>
             </div>
-            <div id="detail-mixed-info">
-                <p class="sub-title">▹ 화합물 정보</p>
+            <div id="detail-mixed-info" class="detail-mixed-info">
+                <p class="sub-title">▷ 화합물 정보</p>
                 <%- include('sub_table.ejs') %>
             </div>
-            <div id="detail-mixed-flavor-info">
-                <p class="sub-title">▹ Flavor 화합물 정보</p>
+            <div id="detail-mixed-flavor-info" class="detail-mixed-flavor-info">
+                <p class="sub-title">▷ Flavor 화합물 정보</p>
                 <div id="flavor-info-cont">
                     <div class="flavor-info-key">
                         <ul>
@@ -53,14 +53,64 @@
                             <li>발견 식품</li>
                         </ul>
                     </div>
-                    <div class="flavor-info-value">
+                    <div class="flavor-info-value" val="sulfurous">
+                        <ul>
+                            <li>S-Methyl3-methylbutanethioate</li>
+                            <li><span class="sub-prd-attr">Sulfurous</span></li>
+                            <li>강한유황냄새</li>
+                            <li>중간</li>
+                            <li>쓴맛(Bitter)</li>
+                            <li>부패한 양파나 마늘과 같은 불쾌한 향</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="malty">
                         <ul>
                             <li>Butanal,2-methyl-</li>
                             <li>Nutty, Roasted, <span class="sub-prd-attr">Malty</span>, Fruity</li>
-                            <li>견과류 향과 약간의 과일향</li>
+                            <li>맥아를 건조하거나 발효할 때 생성되는 독특한 향, 따뜻하고 달콤한 곡물 향</li>
                             <li>강함</li>
-                            <li>달콤하고 고소한맛(Sweet&Nutty), 약간짭짤한맛(+Savory)</li>
-                            <li>구운 음식, 견과류, 커피, 초콜릿, 발효 식품</li>
+                            <li>달콤하고 고소한맛 (Sweet & Nutty), 약간 짭짤한맛 (Savory)</li>
+                            <li>구운 음식, 견과류, 커피, 초콜릿, 발효식품</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="roasted">
+                        <ul>
+                            <li>Furan,2-pentyl-</li>
+                            <li><span class="sub-prd-attr">Roasted</span>, Savory, Meaty, Green, Nutty, FruityMalty, Fruity</li>
+                            <li>주로 볶거나 구운과정에서 발생하는 향, 약간 탄 향이나 스모키한 느낌</li>
+                            <li>강함</li>
+                            <li>달콤하고 고소한맛 (Sweet & Nutty), 약간 짭짤한맛 (Savory)</li>
+                            <li>견과류, 곡물, 구운 음식</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="savory">
+                        <ul>
+                            <li>Furan,2-pentyl-</li>
+                            <li>Roasted, <span class="sub-prd-attr">Savory</span>, Meaty, Green, Nutty, FruityMalty, Fruity</li>
+                            <li>짭조름하면서도 풍미있는 향, 고기와 유사한 감칠맛 나는 향</li>
+                            <li>강함</li>
+                            <li>달콤하고 고소한맛 (Sweet & Nutty), 약간 짭짤한맛 (Savory)</li>
+                            <li>견과류, 곡물, 구운 음식</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="caramel">
+                        <ul>
+                            <li>Furan,2-ethyl-</li>
+                            <li>Nutty, Roasted, <span class="sub-prd-attr">Caramel</span></li>
+                            <li>설탕이 고온에서 가열될 때 생기는 달콤하고 버터같은 향</li>
+                            <li>강함</li>
+                            <li>달콤하고 고소한맛 (Sweet & Nutty), 약간 짭짤한맛 (Savory)</li>
+                            <li>구운 음식, 음료</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="nutty">
+                        <ul>
+                            <li>Butanal,3-methyl-</li>
+                            <li><span class="sub-prd-attr">Nutty</span>, Roasted, Malty, Fruity</li>
+                            <li>견과류 특유의 고소하고 약간 기름진 향, 바삭하면서도 고소한 향</li>
+                            <li>강함</li>
+                            <li>달콤하고 고소한맛 (Sweet & Nutty), 약간 짭짤한맛 (Savory)</li>
+                            <li>구운 음식, 견과류, 커피, 초콜릿, 발효식품</li>
                         </ul>
                     </div>
                     <div class="flavor-info-key">
@@ -73,7 +123,17 @@
                             <li>화학반응</li>
                         </ul>
                     </div>
-                    <div class="flavor-info-value">
+                    <div class="flavor-info-value" val="sulfurous">
+                        <ul>
+                            <li>C6H12OS</li>
+                            <li>Thiol</li>
+                            <li>23747-45-7</li>
+                            <li>132.224</li>
+                            <li>녹지 않음 / 잘 녹음</li>
+                            <li>합성 반응</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="malty">
                         <ul>
                             <li>C5H10O</li>
                             <li>Aldehyde</li>
@@ -81,6 +141,46 @@
                             <li>86.13</li>
                             <li>약간 녹음 / 잘 녹음</li>
                             <li>Maillard 반응</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="roasted">
+                        <ul>
+                            <li>C9H14O</li>
+                            <li>Furan</li>
+                            <li>3777-69-3</li>
+                            <li>138.21</li>
+                            <li>약간 녹음 / 잘 녹음</li>
+                            <li>Maillard 반응</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="savory">
+                        <ul>
+                            <li>C9H14O</li>
+                            <li>Furan</li>
+                            <li>3777-69-3</li>
+                            <li>138.21</li>
+                            <li>약간 녹음 / 잘 녹음</li>
+                            <li>Maillard 반응</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="caramel">
+                        <ul>
+                            <li>C6H8O</li>
+                            <li>Furan</li>
+                            <li>3208-16-0</li>
+                            <li>96.1271</li>
+                            <li>약간 녹음 / 잘 녹음</li>
+                            <li>캐러멜화 반응</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="nutty">
+                        <ul>
+                            <li>C5H10O</li>
+                            <li>Aldehyde</li>
+                            <li>590-86-3</li>
+                            <li>86.1323</li>
+                            <li>약간 녹음 / 잘 녹음</li>
+                            <li>캐러멜화 반응</li>
                         </ul>
                     </div>
                 </div>

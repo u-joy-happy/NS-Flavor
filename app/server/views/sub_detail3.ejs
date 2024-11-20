@@ -1,0 +1,176 @@
+<body>
+    <div id="sub-detail-header">
+        <p class="sub-main-title"><span class="sub-prd-name">포카칩 오리지널</span></p>
+        <img id="sub-detail-close" class="sub-detail-close" src="img/x_icon.png">
+        <hr class="sub-border-divider" />
+    </div>
+
+    <div id="sub-detail-cont">
+        <div id="detail-plot-cont">
+            <div id="detail-plot-area">
+                <canvas id="detail-plot3" class="detail-plot"></canvas>
+            </div>
+        </div>
+        <div id="detail-flavor-cont">
+            <div id="detail-flavor-note">
+                <p class="sub-title">▷ Top 5 Flavor Note</p>
+                <div id="flavor-note-group">
+                    <div id="flavor-note-top">
+                        <button class="btn flavor-note">Savory</button>
+                        <button class="btn flavor-note">Caramel</button>
+                        <button class="btn flavor-note">Meaty</button>
+                        <button class="btn flavor-note">Fruity</button>
+                        <button class="btn flavor-note">Sulfurous</button>
+                        <button class="btn flavor-note" disabled>Malty</button>
+                        <button class="btn flavor-note" disabled>Green</button>
+                        <!-- <button class="btn flavor-note">Sulfurous</button> -->
+                    </div>
+                    <div id="flavor-note-bottom">
+                        <button class="btn flavor-note" disabled>Sweet</button>
+                        <button class="btn flavor-note" disabled>Nutty</button>
+                        <button class="btn flavor-note" disabled>Roasted</button>
+                        <button class="btn flavor-note" disabled>-</button>
+                        <button class="btn flavor-note" disabled>-</button>
+                        <button class="btn flavor-note" disabled>-</button>
+                        <button class="btn flavor-note" disabled>-</button>
+                    </div>
+                </div>
+            </div>
+            <div id="detail-mixed-info" class="detail-mixed-info">
+                <p class="sub-title">▷ 화합물 정보</p>
+                <%- include('sub_table3.ejs') %>
+            </div>
+            <div id="detail-mixed-flavor-info" class="detail-mixed-flavor-info">
+                <p class="sub-title">▷ Flavor 화합물 정보</p>
+                <div id="flavor-info-cont">
+                    <div class="flavor-info-key">
+                        <ul>
+                            <li>화합물질명</li>
+                            <li>Flavor Note</li>
+                            <li>향 특성</li>
+                            <li>향 강도</li>
+                            <li>맛 특성</li>
+                            <li>발견 식품</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="savory">
+                        <ul>
+                            <li>Furan, 2-pentyl-</li>
+                            <li>Roasted, <span class="sub-prd-attr">Savory</span>, Meaty, Green, Nutty, Fruity</li>
+                            <li>짭조름하면서도 풍미있는 향, 고기와 유사한 감칠맛 나는 향</li>
+                            <li>강함</li>
+                            <li>달콤하고 고소한맛 (Sweet & Nutty), 약간 짭짤한맛 (Savory)</li>
+                            <li>견과류, 곡물, 구운 음식</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="caramel">
+                        <ul>
+                            <li>2-Propanone,1-hydroxy-</li>
+                            <li><span class="sub-prd-attr">Caramel</span>, Sweet, Fruity</li>
+                            <li>설탕이 고온에서 가열될 때 생기는 달콤하고 버터같은 향</li>
+                            <li>중간</li>
+                            <li>달콤한 맛 (Sweet)</li>
+                            <li>과일류, 신선한 채소류</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="meaty">
+                        <ul>
+                            <li>Furan, 2-pentyl-</li>
+                            <li>Roasted, Savory, <span class="sub-prd-attr">Meaty</span>, Green, Nutty, Fruity</li>
+                            <li>기름진 구운 고기 및 식물성 기름에 튀긴 음식의 지방질 향</li>
+                            <li>강함</li>
+                            <li>달콤하고 고소한맛 (Sweet & Nutty), 약간 짭짤한맛 (Savory)</li>
+                            <li>견과류, 곡물, 구운 음식</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="fruity">
+                        <ul>
+                            <li>1-Butanol, 2-methyl-, propanoate</li>
+                            <li><span class="sub-prd-attr">Fruity</span>, Sweet</li>
+                            <li>달콤하고 신선한 과일 향</li>
+                            <li>강함</li>
+                            <li>달콤한 맛 (Sweet)</li>
+                            <li>과일향</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="sulfurous">
+                        <ul>
+                            <li>Carbonyl sulfide</li>
+                            <li><span class="sub-prd-attr">Sulfurous</span></li>
+                            <li>강한 유황 향, 약간 불쾌한 냄새</li>
+                            <li>강함</li>
+                            <li>-</li>
+                            <li>발효 식품, 일부 가공육 제품, 커피 및 열처리된 식품에서 미량 발견 가능</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-key">
+                        <ul>
+                            <li>화학식</li>
+                            <li>분류</li>
+                            <li>CAS 번호</li>
+                            <li>분자량(g/mol)</li>
+                            <li>용해도(물/기름)</li>
+                            <li>화학반응</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="savory">
+                        <ul>
+                            <li>C9H14O</li>
+                            <li>Furan</li>
+                            <li>3777-69-3</li>
+                            <li>138.21</li>
+                            <li>약간 녹음 / 잘 녹음</li>
+                            <li>Maillard 반응</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="caramel">
+                        <ul>
+                            <li>C3H6O2</li>
+                            <li>Alcohol</li>
+                            <li>116-09-6</li>
+                            <li>74.08</li>
+                            <li>잘 녹음 / 잘 녹음</li>
+                            <li>캐러멜화 반응</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="meaty">
+                        <ul>
+                            <li>C9H14O</li>
+                            <li>Furan</li>
+                            <li>3777-69-3</li>
+                            <li>138.21</li>
+                            <li>약간 녹음 / 잘 녹음</li>
+                            <li>Maillard 반응</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="fruity">
+                        <ul>
+                            <li>C8H16O2</li>
+                            <li>Ester</li>
+                            <li>105-68-0</li>
+                            <li>144.21</li>
+                            <li>약간 녹음 / 잘 녹음</li>
+                            <li>에탄올 발효 반응</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="sulfurous">
+                        <ul>
+                            <li>COS</li>
+                            <li>Sulfide</li>
+                            <li>463-58-1</li>
+                            <li>60.07</li>
+                            <li>녹지 않음 / 잘 녹음</li>
+                            <li>고온 공정 또는 발효 과정</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sub-detail-footer"></div>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/sub_detail_polar_chart3.js"></script>

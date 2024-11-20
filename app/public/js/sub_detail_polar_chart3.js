@@ -2,7 +2,6 @@
 var data = {
     labels: [
         'Caramel',
-        'Citrus',
         'Fruity',
         'Green',
         'Malty',
@@ -16,17 +15,16 @@ var data = {
     datasets: [{
         // label: 'My First Dataset',
         data: [
-            0.652346249,
-            -0.734052047,
-            0.349403663,
-            0.528281017,
-            1.262305557,
-            0.340411365,
-            0.713118334,
-            0.64048554,
-            0.937953579,
-            1.429767129,
-            0.417878208,
+            2.101206345,
+            1.562159802,
+            1.002088658,
+            1.00276169,
+            1.84794283,
+            0.459492845,
+            0.39243866,
+            2.904158319,
+            1.209827551,
+            0.931699344,
         ],
         backgroundColor: [
             '#F25E86',
@@ -87,32 +85,32 @@ var layout = {
     plugins: [{
         id: 'rotatedLabels',
         afterDraw: (chart) => {
-            const ctx = chart.ctx;
-            const rScale = chart.scales.r;
-            const centerX = rScale.xCenter;
-            const centerY = rScale.yCenter;
+            const ctx3 = chart.ctx;
+            const rScale3 = chart.scales.r;
+            const centerX3 = rScale3.xCenter;
+            const centerY4 = rScale3.yCenter;
             const labels = chart.data.labels;
     
             labels.forEach((label, index) => {
-                const angle = rScale.getIndexAngle(index) - Math.PI / 2; // 기존 각도 계산
-                const distance = rScale.drawingArea + 20; // 차트 외곽 거리
-                const x = centerX + Math.cos(angle) * distance;
-                const y = centerY + Math.sin(angle) * distance;
+                const angle3 = rScale3.getIndexAngle(index) - Math.PI / 2; // 기존 각도 계산
+                const distance3 = rScale3.drawingArea + 20; // 차트 외곽 거리
+                const x3 = centerX3 + Math.cos(angle3) * distance3;
+                const y3 = centerY4 + Math.sin(angle3) * distance3;
     
-                ctx.save();
-                ctx.translate(x, y); // 라벨 위치로 이동
-                ctx.rotate(angle + Math.PI / 2); // 기본 각도 + 90도 회전
-                ctx.textAlign = 'center'; // 텍스트 중앙 정렬
-                ctx.textBaseline = 'middle'; // 텍스트 중앙 기준선
-                ctx.font = '14px Nanum Square';
-                ctx.fillStyle = '#333';
-                ctx.fillText(label, 0, 0); // 회전된 상태로 텍스트 그리기
-                ctx.restore();
+                ctx3.save();
+                ctx3.translate(x3, y3); // 라벨 위치로 이동
+                ctx3.rotate(angle3 + Math.PI / 2); // 기본 각도 + 90도 회전
+                ctx3.textAlign = 'center'; // 텍스트 중앙 정렬
+                ctx3.textBaseline = 'middle'; // 텍스트 중앙 기준선
+                ctx3.font = '14px Nanum Square';
+                ctx3.fillStyle = '#333';
+                ctx3.fillText(label, 0, 0); // 회전된 상태로 텍스트 그리기
+                ctx3.restore();
             });
         }
     }]
 }
 
 
-const polarArea = document.getElementById('detail-plot');
-new Chart(polarArea, layout);
+const polarArea3 = document.getElementById('detail-plot3');
+new Chart(polarArea3, layout);

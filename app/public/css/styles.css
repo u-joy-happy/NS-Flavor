@@ -292,7 +292,7 @@ ul.dropdown-menu .dropdown-item:active {
   color: black;
 }
 
-#sub-detail {
+.sub-detail {
   display: none;
   float: none;
   position: fixed;
@@ -385,7 +385,7 @@ ul.dropdown-menu .dropdown-item:active {
   font-size: 13px;
 }
 
-#detail-plot {
+.detail-plot {
   min-height: 500px;
   max-height: 500px;
   min-width: 500px;
@@ -526,12 +526,14 @@ ul.dropdown-menu .dropdown-item:active {
 }
 
 #flavor-info-cont {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 130px auto 130px auto;
+  column-gap: 20px;
+  padding: 0 10px;
 }
 
 .flavor-info-key ul {
-  width: 180px;
+  width: 130px;
   list-style: none;
   font-weight: bold;
   font-size: 15px;
@@ -540,6 +542,7 @@ ul.dropdown-menu .dropdown-item:active {
 }
 
 .flavor-info-value ul {
+  /* width: 280px; */
   list-style: none;
   font-size: 13px;
   line-height: 47px;
@@ -567,7 +570,7 @@ ul.dropdown-menu .dropdown-item:active {
   z-index: 2;
 }
 
-#sub-similar {
+.sub-similar {
   display: none;
   float: none;
   position: fixed;
@@ -583,7 +586,7 @@ ul.dropdown-menu .dropdown-item:active {
   z-index: 2;
 }
 
-#sub-similar-chart {
+.sub-similar-chart {
   display: none;
   float: none;
   position: fixed;

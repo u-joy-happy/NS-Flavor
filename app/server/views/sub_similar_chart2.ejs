@@ -1,0 +1,36 @@
+<body>
+    <div id="sub-detail-header">
+        <p class="sub-main-title"><span class="sub-prd-name">치오 팝칩 파프리카</span></p>
+        <img id="sub-similar-chart-close" class="sub-detail-close" src="img/x_icon.png">
+        <hr class="sub-border-divider" />
+    </div>
+
+    <div id="sub-similar-cont">
+        <div id="flavor-bar-cont">
+            <canvas id="flavor-bar-chart" class="sim-bar-chart"></canvas>
+        </div>
+        <div id="compo-bar-cont">
+            <canvas id="compo-bar-chart" class="sim-bar-chart"></canvas>
+        </div>
+
+        <div id="bar-range">
+            <input type="range" class="form-range custom-range" id="customRange1" min="0" max="2" step="0.5">
+            <div id="range-label">
+                <span>0%</span>
+                <span></span>
+                <span>100%</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="sub-detail-footer"></div>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+<script src="js/sub_similar_bar_chart_flavor2.js"></script>
+<script src="js/sub_similar_bar_chart_compo2.js"></script>
+

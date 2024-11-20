@@ -32,6 +32,12 @@
 	left: calc(4.28px * 38);
 }
 
+#prd-tooltip3 {
+	display: none;
+	top: calc(-1.14px * 30);
+	left: calc(-3.46px * 38 - 5px);
+}
+
 .prd-scatter-name {
 	background-color: #D9A0D5;
 	border: 2px solid white;

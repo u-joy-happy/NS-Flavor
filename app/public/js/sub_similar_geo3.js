@@ -1,15 +1,15 @@
 am5.ready(function () {
 
     // Create root and chart
-    const root = am5.Root.new("sim-geo");
+    const root3 = am5.Root.new("sim-geo3");
 
     // Set themes
-    root.setThemes([
-        am5themes_Animated.new(root)
+    root3.setThemes([
+        am5themes_Animated.new(root3)
     ]);
 
-    var chart = root.container.children.push(
-        am5map.MapChart.new(root, {
+    var chart = root3.container.children.push(
+        am5map.MapChart.new(root3, {
             projection: am5map.geoNaturalEarth1(),
             panX: "none", // X축 팬닝 비활성화
             panY: "none", // Y축 팬닝 비활성화
@@ -21,7 +21,7 @@ am5.ready(function () {
 
     // Create polygon series
     var polygonSeries = chart.series.push(
-        am5map.MapPolygonSeries.new(root, {
+        am5map.MapPolygonSeries.new(root3, {
             geoJSON: am5geodata_continentsLow,
             exclude: ["antarctica"]
         })
@@ -32,7 +32,7 @@ am5.ready(function () {
         templateField: "settings"
     });
 
-    var colors = am5.ColorSet.new(root, {});
+    var colors = am5.ColorSet.new(root3, {});
 
     polygonSeries.data.setAll([
         { id: "europe", settings: { fill: colors.next() } },
@@ -44,7 +44,7 @@ am5.ready(function () {
     ]);
 
     // Create a point series to place labels at continent centers
-    var pointSeries = chart.series.push(am5map.MapPointSeries.new(root, {}));
+    var pointSeries = chart.series.push(am5map.MapPointSeries.new(root3, {}));
 
     pointSeries.bullets.push(function (root, series, dataItem) {
         return am5.Bullet.new(root, {

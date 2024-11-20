@@ -1,0 +1,176 @@
+<body>
+    <div id="sub-detail-header">
+        <p class="sub-main-title"><span class="sub-prd-name">치오 팝칩 파프리카</span></p>
+        <img id="sub-detail-close" class="sub-detail-close" src="img/x_icon.png">
+        <hr class="sub-border-divider" />
+    </div>
+
+    <div id="sub-detail-cont">
+        <div id="detail-plot-cont">
+            <div id="detail-plot-area">
+                <canvas id="detail-plot2" class="detail-plot"></canvas>
+            </div>
+        </div>
+        <div id="detail-flavor-cont">
+            <div id="detail-flavor-note">
+                <p class="sub-title">▷ Top 5 Flavor Note</p>
+                <div id="flavor-note-group">
+                    <div id="flavor-note-top">
+                        <button class="btn flavor-note">Slightly-Spicy</button>
+                        <button class="btn flavor-note">Pine</button>
+                        <button class="btn flavor-note">Woody</button>
+                        <button class="btn flavor-note">Buttery</button>
+                        <button class="btn flavor-note">Warm-Spicy</button>
+                        <button class="btn flavor-note" disabled>Citrus</button>
+                        <button class="btn flavor-note" disabled>Fatty</button>
+                        <!-- <button class="btn flavor-note">Sulfurous</button> -->
+                    </div>
+                    <div id="flavor-note-bottom">
+                        <button class="btn flavor-note" disabled>Herbal</button>
+                        <button class="btn flavor-note" disabled>Earthy</button>
+                        <button class="btn flavor-note" disabled>Creamy</button>
+                        <button class="btn flavor-note" disabled>-</button>
+                        <button class="btn flavor-note" disabled>-</button>
+                        <button class="btn flavor-note" disabled>-</button>
+                        <button class="btn flavor-note" disabled>-</button>
+                    </div>
+                </div>
+            </div>
+            <div id="detail-mixed-info" class="detail-mixed-info">
+                <p class="sub-title">▷ 화합물 정보</p>
+                <%- include('sub_table2.ejs') %>
+            </div>
+            <div id="detail-mixed-flavor-info" class="detail-mixed-flavor-info">
+                <p class="sub-title">▷ Flavor 화합물 정보</p>
+                <div id="flavor-info-cont">
+                    <div class="flavor-info-key">
+                        <ul>
+                            <li>화합물질명</li>
+                            <li>Flavor Note</li>
+                            <li>향 특성</li>
+                            <li>향 강도</li>
+                            <li>맛 특성</li>
+                            <li>발견 식품</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="slightly-spicy">
+                        <ul>
+                            <li>Bicyclo[3.1.0]hex-2-ene,2-methyl-5-(1-methylethyl)-</li>
+                            <li>Pine, Herbal, <span class="sub-prd-attr">Slightly-Spicy</span></li>
+                            <li>소나무 및 허브 향과 함께 약간의 미묘한 매운 향</li>
+                            <li>강함</li>
+                            <li>상쾌한맛 (Fresh), 고농도일 경우 쓴맛 (Bitter)</li>
+                            <li>정유 (Essential Oil, 로즈마리, 타임 등)</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="pine">
+                        <ul>
+                            <li>3-Carene</li>
+                            <li><span class="sub-prd-attr">Pine</span></li>
+                            <li>신선하고 달콤한 소나무향</li>
+                            <li>강함</li>
+                            <li>상쾌한맛 (Fresh), 고농도일 경우 쓴맛 (Bitter)</li>
+                            <li>정유 (Essential Oil, 바질오일 등) 및 피망, 빌베린</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="woody">
+                        <ul>
+                            <li>β-Pinene</li>
+                            <li>Pine, <span class="sub-prd-attr">Woody</span>, HerbalPine</li>
+                            <li>신선한 소나무와 허브 향</li>
+                            <li>강함</li>
+                            <li>상쾌한맛 (Fresh), 고농도일 경우 쓴맛 (Bitter)</li>
+                            <li>허브, 소나무</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="buttery">
+                        <ul>
+                            <li>Acetoin</li>
+                            <li><span class="sub-prd-attr">Buttery</span>, Sweet</li>
+                            <li>부드럽고 풍부한 버터 향</li>
+                            <li>중간</li>
+                            <li>달콤한 버터 맛 (Buttery Sweet)</li>
+                            <li>버터, 유제품</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="warm-spicy">
+                        <ul>
+                            <li>o-Cymene</li>
+                            <li><span class="sub-prd-attr">Warm-Spicy</span>, Herbal, Citrus</li>
+                            <li>은은하면서도 약간 자극적인 따뜻한 느낌으로, 차분하고 깊이 있는 매운향</li>
+                            <li>강함</li>
+                            <li>상쾌한맛 (Fresh), 고농도일 경우 쓴맛 (Bitter)</li>
+                            <li>감귤류 과일, 허브, 향신료</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-key">
+                        <ul>
+                            <li>화학식</li>
+                            <li>분류</li>
+                            <li>CAS 번호</li>
+                            <li>분자량(g/mol)</li>
+                            <li>용해도(물/기름)</li>
+                            <li>화학반응</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="slightly-spicy">
+                        <ul>
+                            <li>C10H16</li>
+                            <li>Terpene</li>
+                            <li>2867-05-2</li>
+                            <li>136.234</li>
+                            <li>녹지 않음 / 잘 녹음</li>
+                            <li>산화반응</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="pine">
+                        <ul>
+                            <li>C10H16</li>
+                            <li>Terpene</li>
+                            <li>13466-78-9</li>
+                            <li>136.238</li>
+                            <li>녹지 않음 / 잘 녹음</li>
+                            <li>산화반응</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="woody">
+                        <ul>
+                            <li>C10H16</li>
+                            <li>Terpene</li>
+                            <li>127-91-3</li>
+                            <li>136.23</li>
+                            <li>녹지 않음 / 잘 녹음</li>
+                            <li>산화반응, 에스터화반응</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="buttery">
+                        <ul>
+                            <li>C4H8O2</li>
+                            <li>Ketone</li>
+                            <li>513-86-0</li>
+                            <li>88.11</li>
+                            <li>잘 녹음 / 잘 녹음</li>
+                            <li>Maillard 반응</li>
+                        </ul>
+                    </div>
+                    <div class="flavor-info-value" val="warm-spicy">
+                        <ul>
+                            <li>C10H14</li>
+                            <li>Terpene</li>
+                            <li>527-84-4</li>
+                            <li>134.22</li>
+                            <li>녹지 않음 / 잘 녹음</li>
+                            <li>산화반응</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sub-detail-footer"></div>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/sub_detail_polar_chart2.js"></script>
