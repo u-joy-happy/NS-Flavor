@@ -1,8 +1,7 @@
 .prd-tooltip {
 	position: absolute;
-	top: 490px;
-	left: 350px;
 	z-index: 2;
+	align-items: center;
 }
 
 .prd-scatter-circle {
@@ -22,20 +21,20 @@
 
 #prd-tooltip1 {
 	display: none;
-	top: calc(-1.38px * 30);
-	left: calc(-2.26px * 38 - 5px);
+	top: calc(-1.38px * 35 - 15px);
+	left: calc(-2.26px * 40 - 80px);
 }
 
 #prd-tooltip2 {
 	display: none;
-	top: calc(1.57px * 30);
-	left: calc(4.28px * 38);
+	top: calc(1.57px * 35 - 15px);
+	left: calc(4.28px * 40 - 80px);
 }
 
 #prd-tooltip3 {
 	display: none;
-	top: calc(-1.14px * 30);
-	left: calc(-3.46px * 38 - 5px);
+	top: calc(-1.14px * 35 - 15px);
+	left: calc(-3.46px * 40 - 80px);
 }
 
 .prd-scatter-name {
