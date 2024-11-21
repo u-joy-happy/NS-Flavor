@@ -26,6 +26,14 @@ var layout = {
     options: {
         indexAxis: 'y',
         maintainAspectRatio: false,
+        layout: {
+            padding: {
+                top: 10,
+                bottom: 10,
+                left: 30,
+                right: 30
+            }
+        },
         plugins: {
             legend: {
                 display: false,

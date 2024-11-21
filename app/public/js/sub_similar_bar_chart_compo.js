@@ -1,9 +1,9 @@
 
 var data = {
-    labels: ['레이즈 요피맛', '워커스 새우', '스미스 소금 & 식초', '레이즈 소금 & 식초', '워커스 소금 식초', '타키스 케틀즈 푸에고', '레이즈 구운새우와 해산물소스', '양파깡', '크로키 감자칩 파프리카', '프링글스 오리지널', ],
+    labels: ['포스틱', '양파링', '포테토칩 먹태청양마요맛', '새우깡', '먹태깡 청양마요맛', '알새우칩', '인디안밥', '포테토칩 고추장마요맛', '조청유과', '레이즈 맥스 칠리', ],
     datasets: [{
         label: 'distance',
-        data: [99.87, 99.86, 99.86, 99.86, 99.85, 99.74, 97.49, 90.09, 58.42, 56.50, ],
+        data: [89.0, 73.5, 66.2, 65.7, 64.7, 62.7, 58.1, 57.1, 56.3, 56.1, ],
         backgroundColor: [
             'rgb(242, 148, 65, 0.7)',
             'rgb(242, 148, 65, 0.7)',
@@ -27,6 +27,14 @@ var layout = {
     options: {
         indexAxis: 'y',
         maintainAspectRatio: false,
+        layout: {
+            padding: {
+                top: 10,
+                bottom: 10,
+                left: 30,
+                right: 30
+            }
+        },
         plugins: {
             legend: {
                 display: false,
@@ -48,7 +56,7 @@ var layout = {
         scales: {
             x: {
                 // min: 40,
-                max: 115,
+                // max: 90,
                 grid: {
                     display: false
                 },

@@ -27,6 +27,14 @@ var layout = {
     options: {
         indexAxis: 'y',
         maintainAspectRatio: false,
+        layout: {
+            padding: {
+                top: 10,
+                bottom: 10,
+                left: 30,
+                right: 50
+            }
+        },
         plugins: {
             legend: {
                 display: false,
@@ -48,7 +56,7 @@ var layout = {
         scales: {
             x: {
                 // min: 40,
-                max: 115,
+                // max: 115,
                 grid: {
                     display: false
                 },
